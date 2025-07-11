@@ -4,23 +4,50 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width" initial-scale="1.0">
   <title>New Stuff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="social platform.css"> 
   <script href="social platform.js"></script>
 </head>
 <body class="body">
-  <header class="header"><img src="ojames\x-icon.png" class="logo" alt="logo">
-    <input type="button" value="Login"  class="login">
-    <input type="button" value="Signup" class="signup">
-  </header>
-  <main>
-    <form>
-      <fieldset class="compose">
-        <input type="text" class="tweet" placeholder="Compose your tweet">
-        <button class="submit">Post</button>
-      </fieldset>
-    </form>
-  </main>
-  <footer></footer>
-    
+  <div class="site">
+    <header class="header">
+      <h2 class="logo">Jamble&reg</h2>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">&equiv;</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#" class="home">Home</a>
+            <a href="#" class="about">About</a>
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signup">Signup</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      
+      <form>
+        <fieldset class="compose">
+          <img src="My Project\ojames1.png" alt="profile picture" class="profile">
+          <input type="text" class="tweet" placeholder="Compose your tweet">
+          <button class="submit">Post</button>
+          
+        </fieldset>
+      </form>
+
+      <div class="recent-posts">
+        <h3 class="recent-post-heading">Recent Posts</h3>
+        
+      </div>
+
+      
+    </main>
+    <footer>
+      <div class="footer-links">
+        <p class="footer-text">© 2023 Jamble. All rights reserved.</p>
+        <p class="footer-text">Made with ❤️ by OJames</p>
+        
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

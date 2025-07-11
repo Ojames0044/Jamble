@@ -3,15 +3,60 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 600;
+  
 } 
 
+
+.site {
+  min-height: 100dvh;
+  
+}
+
 header {
-  background-color: rgb(0, 0, 255);
-  height: 35px;
+  background-color: rgb(1, 78, 18);
+  height: 33px;
+  width: 100vw;
+  transition: ease-in-out 0.15s;
+}
+
+footer{
+  background-color: rgb(181, 185, 182);
+  height: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-links {
+  font-size: 0.7rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5px;
+
+ 
+  
+
+}
+
+.logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  font-family: twinkle star; sans-serif;
+  font-size: 1.4rem;
+}
+
+.profile {
+  width: 2.5em;
+  height: 2.5em;
+  border-color: rgb(1, 78, 18)ck;
+  border-style:groove;
+  border-radius: 50%;
+  position: absolute;
 }
 
 main {
-  margin: 35px;
+  margin: 0;
   
 }
 
@@ -19,27 +64,36 @@ fieldset {
   padding: 12px;
   border-radius: 15px;
   border-style: double;
-  height: 15em;
-  background-color: whitesmoke;
-  position: absolute;
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+  background-color: rgb(236, 235, 235);
+  position: relative;
+  
 }
 
 .tweet {
   border-radius: 25px;
   height: 2.2em;
-  width: 35em;
+  width: 30em;
   border-style: unset;
   padding: 15px;
   background-color: rgb(203, 203, 238);
+  margin-left: 62px;
+  
+ 
 }
 
 .submit {
   border-radius: 8px;
   border-color: transparent;
   position: relative;
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(1, 78, 18);
   color: white;
+  font-weight: 600;
 }
+
+
 
 /*  lknkm 
 
@@ -55,6 +109,8 @@ fieldset {
     top: 5px;
     right: 16px;
     font-size: 16px;
+    font-weight: 600;
+    color: rgb(1, 78, 18);
 }
 
 .signup {
@@ -64,4 +120,92 @@ fieldset {
     top: 5px;
     right: 80px;
     font-size: 16px;
+    font-weight: 600;
+    color: rgb(1, 78, 18);
 }
+
+.dropbtn {
+  background-color: rgb(1, 78, 18);
+  color: white;
+  padding: 6px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top:8px;
+  right: 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(1, 78, 18);
+  position: fixed;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(236, 235, 235);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Recent-posts */
+
+.recent-posts {
+  
+  padding: 12px;
+  border-radius: 15px;
+  border-style: double;
+  height: auto;
+  width: auto;
+  background-color: rgb(236, 235, 235);
+  
+  
+}
+
+.recent-post-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(1, 78, 18);
+  justify-self: center;
+  position: relative;
+  text-decoration: underline;
+  
+  
+
+}
+
+
+
+/* File: social%20platform.css 
+
+
+
+
+
+.container {
+  position:relative;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.top-box {
+  z-index: 1;
+  background: blue;
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 50px;
+}
+*/
