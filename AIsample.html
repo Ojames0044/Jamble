@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jamble® Header</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Jamble</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+    :root {
+      --primary-color: rgb(2, 77, 18);
+      --text-dark: #222;
     }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: var(--text-dark);
+    }
+
+    /* Header */
     .header {
-      background-color: #333;
+      background-color: var(--primary-color);
       color: white;
-      padding: 10px 20px;
+      padding: 15px 25px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: relative;
     }
 
     .logo {
-      margin: 0;
       font-size: 24px;
+      font-weight: bold;
     }
 
     .dropdown {
       position: relative;
-      display: inline-block;
     }
 
     .dropbtn {
-      background-color: #444;
+      background: none;
       color: white;
-      padding: 10px 15px;
-      font-size: 18px;
-      border: none;
+      font-size: 26px;
+      border: 2px solid white;
+      padding: 5px 10px;
+      border-radius: 5px;
       cursor: pointer;
     }
 
@@ -42,56 +55,155 @@
       display: none;
       position: absolute;
       right: 0;
-      background-color: #f9f9f9;
+      background-color: white;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
       z-index: 1;
+      border-radius: 6px;
+      overflow: hidden;
     }
 
     .dropdown-content a {
-      color: black;
+      color: var(--text-dark);
       padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
 
     .dropdown-content a:hover {
-      background-color: #ddd;
+      background-color: #f1f1f1;
     }
 
     .show {
       display: block;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #444;
+    }
+
+    .hero button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: rgb(1, 60, 14);
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary-color);
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
   <header class="header">
-    <h2 class="logo">Jamble&reg;</h2>
+    <div class="logo">Jamble&reg;</div>
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">&equiv;</button>
+      <button onclick="toggleMenu()" class="dropbtn">&#9776;</button>
       <div id="myDropdown" class="dropdown-content">
-        <a href="#" class="home">Home</a>
-        <a href="#" class="about">About</a>
-        <a href="#" class="login">Login</a>
-        <a href="#" class="signup">Signup</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
       </div>
     </div>
   </header>
 
+  <section class="hero">
+    <h1>Welcome to Jamble&reg;</h1>
+    <p>Your trusted platform for a connected experience.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Secure</h3>
+      <p>We prioritize your data security with end-to-end encryption.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Fast & Easy</h3>
+      <p>Sign up and start using the platform in under a minute.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Support</h3>
+      <p>We’re here to help, anytime you need us.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Jamble. All rights reserved.
+  </footer>
+
   <script>
-    function myFunction() {
+    function toggleMenu() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
 
-    // Optional: Close dropdown if clicked outside
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          if (dropdowns[i].classList.contains('show')) {
-            dropdowns[i].classList.remove('show');
-          }
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].classList.remove('show');
         }
       }
     }

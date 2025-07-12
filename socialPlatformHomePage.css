@@ -1,0 +1,210 @@
+body {
+  font-size: 1.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  
+  transition: all 500ms;
+  min-height: 100vh;
+  font-size: 0.98rem;
+  background-color: rgb(243, 235, 235);
+ /*
+  background: linear-gradient(45deg, #0f7037, #0eb947); -webkit-background-clip: text; -webkit-text-fill-color: transparent; */
+  margin: 0;
+} 
+
+
+.site {
+  min-height: 100dvh;
+  
+}
+
+header {
+  background-color: rgb(1, 78, 18);
+  
+  transition: ease-in-out 0.15s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+footer{
+  background-color: var(--primary-color);
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  margin-top: 40px;
+
+
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+ 
+}
+
+.logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  font-family: twinkle star; sans-serif;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+
+
+main {
+  margin: 0;
+  
+}
+
+    
+
+.dropbtn {
+  background-color: rgb(1, 78, 18);
+  color: white;
+  padding: 10px 16px;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  
+  justify-self: start;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(1, 78, 18);
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  rgb(2, 77, 18);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(2, 77, 18, 0.2);
+  z-index: 1;
+  right: 0;
+  left: auto;
+  
+}
+
+.dropdown-content a {
+  font-size: 1.0rem;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(3, 59, 24);
+  color: white;
+}
+
+.show {display: block;}
+
+/* Additional styles for the signup form */
+:root {
+  --primary-color: rgb(1, 78, 18);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message h1{
+  color: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 2rem;
+  
+}
+
+.welcome-message button {
+  background: var(--primary-color);
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-self: start;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  ;
+}
+.welcome-message button a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.welcome-message button:hover {
+  background: rgb(2, 77, 18);
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  padding: 40px 20px;
+  
+}
+
+.features-items {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(2, 39, 10, 0.2);
+  padding: 10px 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.features-items:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.features-items h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.features-items p {
+  color: rgb(37, 37, 37);
+  font-size: 0.8rem;
+}

@@ -1,0 +1,222 @@
+body {
+  font-size: 1.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transition: all 500ms;
+  min-height: 100vh;
+
+ /*
+  background: linear-gradient(45deg, #0f7037, #0eb947); -webkit-background-clip: text; -webkit-text-fill-color: transparent; */
+  margin: 0;
+} 
+
+
+.site {
+  min-height: 100dvh;
+  
+}
+
+header {
+  background-color: rgb(1, 78, 18);
+  
+  transition: ease-in-out 0.15s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+footer{
+  background-color: rgb(181, 185, 182);
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+}
+
+.footer-links {
+  font-size: 0.7rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5px;
+
+ 
+}
+
+.logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  font-family: twinkle star; sans-serif;
+  font-size: 1.4rem;
+}
+
+
+
+main {
+  margin: 0;
+  
+}
+
+    
+
+.dropbtn {
+  background-color: rgb(1, 78, 18);
+  color: white;
+  padding: 10px 16px;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  
+  justify-self: start;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(1, 78, 18);
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  rgb(2, 77, 18);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(2, 77, 18, 0.2);
+  z-index: 1;
+  right: 0;
+  left: auto;
+  
+}
+
+.dropdown-content a {
+  font-size: 1.0rem;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(3, 59, 24);
+  color: white;
+}
+
+.show {display: block;}
+
+/* Additional styles for the signup form */
+:root {
+  --primary-color: rgb(1, 78, 18);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  max-width: 400px;
+  margin: 35px auto;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 40px 30px;
+  font-weight: 500;
+  font-size: 1.15rem;
+  border-radius: 12px;
+  max-width: 420px;
+  box-shadow: 0px 8px 16px 0px var(--primary-color);
+}
+.form-title {
+  font-size: x-small;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  align-self: center;
+  height: auto;
+}
+
+.form-description {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group-terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font: 0.9rem sans-serif;
+  font-weight: 600;
+}
+
+.form-group-terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group-terms input {
+  margin-right: 10px;
+}
+
+.form-group-terms a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.form-group-terms input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-submit {
+  background-color: rgb(1, 78, 18);
+  color: white;
+  padding: 12px 140px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}

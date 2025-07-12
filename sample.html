@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Page</title>
+  <style>
+    :root {
+      --primary-color: rgb(2, 77, 18);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .signup-container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .form-group input:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+
+    .form-group.terms {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .form-group.terms input {
+      margin-right: 10px;
+      transform: scale(1.1);
+    }
+
+    .form-group.terms a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: rgb(1, 60, 14);
+    }
+
+    @media (max-width: 480px) {
+      .signup-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <form>
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="username">Preferred Username</label>
+        <input type="text" id="username" placeholder="Choose a username" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required />
+      </div>
+      <div class="form-group">
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="Re-enter password" required />
+      </div>
+      <div class="form-group terms">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">
+          I agree to the <a href="#">terms & policies</a>
+        </label>
+      </div>
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+  </div>
+
+</body>
+</html>

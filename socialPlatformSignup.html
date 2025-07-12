@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <title>New Stuff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="socialPlatformSignup.css"> 
+  <script src="social platform.js"></script>
+</head>
+<body class="body">
+  <div class="site">
+    <header class="header">
+      <h2 class="logo">Jamble&reg;</h2>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">&equiv;</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#" class="home">Home</a><hr>
+            <a href="#" class="login">Login</a><hr>
+            <a href="#" class="signup">Signup</a><hr>
+            <a href="#" class="about">About</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      
+      <form>
+        <fieldset class="signup-form">
+          
+        <p class="form-title">Welcome to <Span class="jamble">Jamble&reg;</Span></p>
+        <h1 class="form-description">Create Account</h1>
+        
+        <div class="form-group">
+          <label for="Full Name" class="form-label">Full Name</label>
+          <input type="text" id="Full Name" placeholder="Enter your full name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="username" class="form-label">Preferred Username</label>
+          <input type="text" id="username" placeholder="Choose a username" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" placeholder="create your password" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Confirm Password</label>
+          <input type="password" id="password" placeholder="Re-enter password" class="form-input" required>
+        </div>
+        <div class="form-group-terms">
+          <input type="checkbox" id="terms" class="form-checkbox" required>
+          <label for="terms" class="form-label">I agree to the <a href="#" class="terms-link">terms & policies</a></label>
+        </div>
+          <button type="submit" class="form-submit">Sign Up</button>
+        
+        </fieldset>
+      </form>
+
+      
+
+      
+    </main>
+    <footer>
+      <div class="footer-links">
+        <p class="footer-text">© 2023 Jamble. All rights reserved.</p>
+        <p class="footer-text">Made with ❤️ by OJames</p>
+        
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
