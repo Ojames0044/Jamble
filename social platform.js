@@ -5,4 +5,4 @@ document.getElementsByClassName("compose").addEventListener("submit", function(e
     alert("Done");
   }
 }
-)
+);
