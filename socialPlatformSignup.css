@@ -220,3 +220,15 @@ main {
   font-weight: bold;
   
 }
+
+.form-footer {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.form-footer a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
