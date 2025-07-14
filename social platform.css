@@ -15,9 +15,13 @@ body {
   
 }
 
+:root {
+  --primary-color: rgb(1, 78, 18);
+}
+
+
 header {
   background-color: rgb(1, 78, 18);
-  height: 33px;
   
   transition: ease-in-out 0.15s;
   position: relative;
@@ -28,22 +32,23 @@ header {
 }
 
 footer{
-  background-color: rgb(181, 185, 182);
+  background-color: var(--primary-color);
   height: auto;
   width: 100vw;
   position: fixed;
   bottom: 0;
-  margin: 0;
-}
+  margin-top: 40px;
 
-.footer-links {
-  font-size: 0.7rem;
+
+  font-size: 0.8rem;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding-top: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
  
 }
+
 
 .logo {
   margin-top: 8px;
@@ -74,6 +79,7 @@ fieldset {
   height: auto;
   width: auto;
   margin-top: 10px;
+  margin-bottom: 10px;;
   background-color: rgb(236, 235, 235);
   position: relative;
   cursor: pointer;
@@ -101,37 +107,6 @@ fieldset {
 
 }
 
-
-
-/*  lknkm 
-
-.header {
-  
-}
-
-
-.login {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  position: absolute;
-    top: 5px;
-    right: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(1, 78, 18);
-}
-
-.signup {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  position: absolute;
-    top: 5px;
-    right: 80px;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(1, 78, 18);
-}
-    */
 
 .dropbtn {
   background-color: rgb(1, 78, 18);
