@@ -2,16 +2,18 @@ body {
   font-size: 1.25rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
-  
   transition: all 500ms;
   min-height: 100vh;
   font-size: 0.98rem;
   background-color: rgb(243, 235, 235);
- /*
-  background: linear-gradient(45deg, #0f7037, #0eb947); -webkit-background-clip: text; -webkit-text-fill-color: transparent; */
   margin: 0;
+  padding-bottom: 25px;
 } 
 
+main {
+  margin: 50px;
+  padding-bottom: 40px;
+}
 
 .site {
   min-height: 100vh;
@@ -227,7 +229,7 @@ main {
 }
 
 
-fieldset {
+.compose {
   padding: 12px;
   border-radius: 15px;
   border-style: none;
@@ -236,7 +238,7 @@ fieldset {
   margin: 10px;
   background-color: rgb(230, 230, 230);
   position: relative;
-  cursor: pointer;
+  cursor: all-scroll;
 }
   
 .new-post {
@@ -276,9 +278,9 @@ fieldset {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  width: 100%;
-  max-width: 400px;
-  margin: 35px auto;
+  width: 65%;
+  
+  margin: 15px auto;
   background-color: rgb(255, 255, 255);
   color: black;
   padding: 40px 30px;
@@ -286,6 +288,7 @@ fieldset {
   font-size: 1.15rem;
   border-radius: 12px;
   max-width: 420px;
+  height: 75%;
   box-shadow: 0px 8px 16px 0px var(--primary-color);
 }
 .form-title {
@@ -299,12 +302,12 @@ fieldset {
 .form-description {
   font-size: 1.8rem;
   color: var(--primary-color);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   align-self: center;
 }
 
 .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   
 }
 
@@ -368,7 +371,7 @@ fieldset {
 .form-submit {
   background-color: rgb(1, 78, 18);
   color: white;
-  padding: 12px 100px;
+  padding: 12px 40px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
