@@ -4,14 +4,17 @@ body {
   color: rgb(255, 255, 255);
   font-weight: 600;
   transition: all 500ms;
-  /*
-  background: linear-gradient(45deg, #6366f1, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; */
-  margin: 0;
+   margin: 0;
 } 
 
-
+@media screen and (min-width: 600px) {
+  .header, .footer {
+    width: 100vw;
+  }
+  
+}
 .site {
-  min-height: 100dvh;
+  min-height: 100vh;
   
 }
 

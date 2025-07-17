@@ -1,0 +1,37 @@
+body {
+   
+  background-image: url("Images/headphone-removebg-preview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  background-color: #000;  /* optional background */
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap; /* wrap to new line if screen is small */
+  gap: 10px;
+  justify-content: center;
+}
+
+.key {
+  background-color: #024d12;
+  color: white;
+  padding: 20px 30px;
+  font-size: 24px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 2px 5px 6px rgb(255, 255, 255);
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
