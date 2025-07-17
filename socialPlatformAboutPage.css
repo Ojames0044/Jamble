@@ -14,7 +14,7 @@ body {
 
 
 .site {
-  min-height: 100dvh;
+  min-height: 100vh;
   
 }
 
@@ -257,5 +257,131 @@ fieldset {
   background-color: rgb(1, 78, 18);
   color: white;
   font-weight: 600;
+}
+
+/*social platform Signup and Login css*/
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  max-width: 400px;
+  margin: 35px auto;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 40px 30px;
+  font-weight: 500;
+  font-size: 1.15rem;
+  border-radius: 12px;
+  max-width: 420px;
+  box-shadow: 0px 8px 16px 0px var(--primary-color);
+}
+.form-title {
+  font-size: x-small;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  align-self: center;
+  height: auto;
+}
+
+.form-description {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input[type="text"]:hover,
+.form-group input[type="email"]:hover,
+.form-group input[type="password"]:hover {
+  border-color: transparent;
+  box-shadow: 0px 8px 16px 0px var(--primary-color);
+}
+
+.form-group-terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font: 0.9rem sans-serif;
+  font-weight: 600;
+}
+
+.form-group-terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group-terms input {
+  margin-right: 10px;
+}
+
+.form-group-terms a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.form-group-terms input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group-terms input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+}
+
+.form-submit {
+  background-color: rgb(1, 78, 18);
+  color: white;
+  padding: 12px 100px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+
+.form-submit:hover {
+  background-color: rgb(5, 160, 39);
 
 }
+
+.form-footer {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.form-footer a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+
